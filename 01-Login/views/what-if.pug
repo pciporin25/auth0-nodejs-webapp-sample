@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  .w3-container
+    if locals.user
+      h1 Better What If Report!
+      h2 Our What-If App can go here.
+    else
+      h4 You are not logged in! Please #[a(href="/login") Log In] to continue.
